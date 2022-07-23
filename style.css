@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ### Primary */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;   
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Violet);
+    max-height: 100vh;
+    max-width: 100vw;
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    height: 90%;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    /* width: auto; */
+    color: #fff;
+}
+
+.logo{
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    /* width: 400px; */
+}
+.card {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+}
+.card .main-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.card .text-container{
+    padding: 0 2rem;
+    align-self: center;
+}
+.container .card h2{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;   
+    font-weight: 600;
+    line-height: 1.4;
+}
+.container p{
+    /* width: auto; */
+    
+    line-height: 1.5;
+    padding: 1rem 0;
+    opacity: 0.7;
+}
+.register-btn{
+    font: 'Poppins';
+    font-weight: 600;
+    color: var(--Violet);
+    /* width: 100%; */
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+.register-btn:hover{
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+}
+.social-links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 2rem;
+    /* background-color: #fff; */
+    /* color:#ffff; */
+}
+.social-links .twitter{
+    padding:0  2rem;
+}
+ion-icon{
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ion-icon:hover{
+    border-color: var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+    transition: all 0.3 ease-in-out;
+}
+@media (max-width:375px) {
+
+
+    .logo img{
+        width: 150px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card .text-container{
+        /* margin: 0 auto; */
+        padding-top: 2rem;
+    }
+    .card .text-container h2   {
+        
+        font-size: 1rem;
+    }
+ .social-links{
+    align-items: center;
+    justify-content: center;
+    /* height: 400px; */
+
+ }      
+ ion-icon{
+    /* height: 100%;
+    width: 100%; */
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.social-links .twitter{
+    padding:0  1rem;
+}
+}
